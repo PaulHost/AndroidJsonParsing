@@ -14,7 +14,7 @@ import java.net.URL;
 public class Http {
     private HttpURLConnection conn;
     private InputStream mIs = null;
-    private static String TAG = "Http";
+    private static final String TAG = "Http";
 
     public synchronized void post(final String url, final String data, final ISuccess<String> pResponse) {
         try {
