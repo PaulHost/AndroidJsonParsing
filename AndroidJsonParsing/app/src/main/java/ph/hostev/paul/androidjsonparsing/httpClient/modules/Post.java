@@ -1,4 +1,4 @@
-package ph.hostev.paul.androidjsonparsing.modules;
+package ph.hostev.paul.androidjsonparsing.httpClient.modules;
 
 public class Post {
 

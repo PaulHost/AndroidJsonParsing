@@ -1,4 +1,4 @@
-package ph.hostev.paul.androidjsonparsing.http;
+package ph.hostev.paul.androidjsonparsing.httpClient.http;
 
 import android.util.Log;
 
@@ -11,19 +11,10 @@ import java.io.OutputStreamWriter;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-public class HttpClient {
+public class Http {
     private HttpURLConnection conn;
     private InputStream mIs = null;
-    private HttpClient client = null;
-    private static String TAG = "HttpClient";
-
-    private HttpClient() {
-    }
-
-    public HttpClient http() {
-        if (client == null) client = new HttpClient();
-        return client;
-    }
+    private static String TAG = "Http";
 
     public synchronized void post(final String url, final String data, final ISuccess<String> pResponse) {
         try {
@@ -77,7 +68,6 @@ public class HttpClient {
         }
     }
 
-
     public synchronized void get(final String url, final ISuccess<String> pResponse) {
 
         try {
@@ -121,7 +111,6 @@ public class HttpClient {
 
 
     }
-
 
     private String readInputStream(InputStream inputStream) throws IOException {
         ByteArrayOutputStream result = new ByteArrayOutputStream();

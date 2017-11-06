@@ -1,4 +1,4 @@
-package ph.hostev.paul.androidjsonparsing.json;
+package ph.hostev.paul.androidjsonparsing.httpClient.json;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -7,7 +7,7 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
-import ph.hostev.paul.androidjsonparsing.modules.Post;
+import ph.hostev.paul.androidjsonparsing.httpClient.modules.Post;
 
 public class Json {
     private ArrayList<Post> posts = new ArrayList<Post>();
